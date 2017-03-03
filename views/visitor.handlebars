@@ -1,0 +1,107 @@
+
+<h2 class = "page-header"> Student Works </h2>
+
+<form method="get" action="/users/visitor">
+
+
+
+    <div>
+        {{# each items }}
+
+ <hr style="height:4px;border:none;color:#333;background-color:#333;" />
+
+     
+<hr>
+
+<table>
+  <tr>
+   <td>   {{# if this.profile}}<img src="/uploads/{{this.profile}}"style="width: 175px; height: 175px;"  class="img-
+thumbnail"    >    {{/if}}       </td>
+
+
+    </tr>
+    <tr> 
+    <td><b>NAME: </b>{{ this.name }}</td>
+
+  
+  </tr>
+</table>
+
+ <div><b>USERNAME: </b>{{ this.username }}</div>
+ <hr>
+
+
+ <br>
+
+ <tr>
+    <td><b> Title </b></td>
+    <td>{{this.items.listOfWork.[0].title}}</td>
+  
+  </tr>
+  <tr>
+    <td><b>Description: </b></td>
+    <td>{{this.description}}</td>
+  </tr>
+  <tr>
+    <td><b>link: </b></td>
+    <td>{{this.link}}</td>
+  </tr>
+    <tr>
+    <td><b>Screenshot: </b></td>
+    <td>  {{# if this.screenshot}}<img src="/uploads/{{this.screenshot}}"style="width: 175px; height: 175px;"  class="img-
+thumbnail"    >    {{/if}}  </td>
+  </tr>
+  
+</table>
+
+
+
+
+          
+        {{/each}}
+    </div>
+
+<footer>
+  <div class="container">
+  <ul class="pagination">
+  <li class="disabled"><a href="">&laquo;</a></li>
+  <li><a href="">1</a></li>
+  <li><a href="">2</a></li>
+  <li><a href="">3</a></li>
+  <li><a href="">4</a></li>
+  <li><a href="">&raquo;</a></li>
+  </ul>
+  </div>
+
+
+</footer>
+
+
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+
+<h2 class = "page-header"> Your Works </h2>
+
+<form method="get" action="/users/work">
+
+<div>User List</div>
+
+
+    <div>
+      
+           {{#each hbsu}}
+              {{this.username}}
+
+              {{# each hbsa }}
+                <div>Title  : {{ this.title }}</div>
+                <div>link: {{ this.link }}</div>
+                <div>description: {{ this.description }}</div>
+                 {{/each}}
+          
+        {{/each}}
+    </div>
+
+
+
+
+
+
